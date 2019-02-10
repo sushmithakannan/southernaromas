@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>for home delivery</title>
+</head>
+<style>
+a{
+margin-left:80px;
+padding:20px 20px 20px 20px;
+text-decoration:none;
+color:black;
+font-family:calibri;
+font-size:30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body
+{
+background-image:url("background.jpg");
+}
+</style>
+<body>
+<ul class="center">
+<li><a href="main.html">HOME</a></li>
+<li><a href="home.html">ABOUT US</a></li>
+<li><a href="menu.html">MENU</a></li>
+<li><a href="Gallery.html">GALLERY</a></li>
+<li><a href="fordelivery.html">FOR DELIVERY</a></li>
+<li><a href="contctus.html">CONTACT US</a></li>
+</ul>
+<h1> Place your order here..!!!</h1>
+<form action='nambakadai.html'method="post">
+<table>
+<tr>
+<td><b>Name</b></td>
+<td><input type="text" id="name" size="30%" onclick="return(function2())"/>
+</td>
+</tr>
+<tr>
+<td><b>PHONE NUMBER:</b></td>
+<td><input type="text" name="ph" size="30" maxlength="10" value="Enter your number"/>
+</td>
+</tr><br>
+<tr>
+<td><b>ADDRESS:</b></td>
+<td><input type="text" name="address" size="50" value="enter your address"/></td>
+</tr>
+<tr>
+<td><b>NUMBER OF PEOPLE</b></td>
+</tr>
+<tr>
+<td><b>Family</b></td>
+<td><input type="radio" name="quantity" value="family"/></td>
+<tr>
+<td><b>Individual</b></td>
+<td><input type="radio" name="quantity" value="individual"/></td>
+</tr>
+<td><b>Couple</b></td>
+<td><input type="radio" name="quantity" value="couple"/></td>
+</tr><br>
+<td><b>Type of combo you prefer:</b></td>
+<td>
+<select name="type" size="5" multiple">
+<option value="breakfast combo">Breakfast combo</option>
+<option value="lunch combo">Lunch combo</option>
+<option value="snacks">Snacks</option>
+<option value="Dinner combo">Dinner combo</option>
+<option value="dessert">Dessert</option>
+</select>
+</td></tr>
+
+<tr>
+<td><b>Cab Service</b></td>
+<td rowspan="2">
+<input type="radio" name="cabservice"/>
+<br>
+<input type="radio" name="cabservice"/>
+</td>
+</tr>
+<tr>
+<td><b> Delivery info</b></br>
+<td>
+<b><select name="Delivery Time"></b>
+<option value="9:00am">9:00am</option>
+<option value="1:00am">1:00am</option>
+<option value="4:00am">4:00am</option>
+<option value="6:00am">6:00am</option>
+<option value="8:00am">8:00am</option>
+</select>
+<tr>
+<td><ul><li>
+<input type="submit" id="sub" value="submit order" onclick="return(function1())"/>
+<input type="reset" value="reset order"/>
+</td>
+</tr>type
+</table>
+</form>
+<script type="text/javascript">
+function function1()
+{
+var a=confirm("Are you sure you want to submit?");
+if(input==true)
+{
+alert("Your order is being processed");
+return true;
+}
+else
+{
+alert("Kindly make changes and submit again");
+return false;}
+}
+function function2{
+var x=document.getElementById("name").value;
+var pat=/^[A-Za-z]+$/;
+if(x.match(pat)){
+alert("correct");
+return true;
+}
+else
+{
+alert("check");
+return flase;
+}
+
+}
+</script>
+<div id="footer">
+<table style="margin-left:80px" cellpadding="20px" cellspacing="20px" background-color="rgb(36, 125, 197)">
+<tr>
+<td style="color:#0B1862"><span style="font-family:bold;font-size:30px;text-shadow:3px 3px 10px;">1000+ Deliveries</span></td>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="delivery.jpg" width="100px" height="100px" border-radius="50px">
+<td style="color:#0B1862;font-family:bold;font-size:30px;text-shadow:3px 3px 10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10+ Branches In TamilNadu</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="branch.png" width="100px" height="100px">
+<td style="font-size:30px;font-family:bold;color:#0B1862;text-shadow:3px 3px 10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Healthy Food Gaurantee</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="guarantee.png" width="100px" height="100px">
+</tr>
+</table> 
+</div>
+</body>
+</html>
